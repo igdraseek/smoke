@@ -1,0 +1,13 @@
+/* CSS declarations go here */
+.item-group {
+    padding: 20px;
+}
+.item-single {
+    padding: 8px;
+}
+.header {
+    text-align: center;
+}
+.desc {
+    text-align: center;
+}
