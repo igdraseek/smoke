@@ -1,0 +1,134 @@
+<head>
+    <title>Summer Bags and Sun Glasses</title>
+</head>
+
+<body>
+</body>
+
+<template name="ApplcationLayout">
+    <article>
+        {{> yield}}
+    </article>
+</template>
+
+<template name="BagA">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="BagB1">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="BagB2">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="BagB3">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="GlaA">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="GlaB1">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="GlaB2">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="GlaB3">
+    {{ >Header }}
+    <div id="body_content">
+        {{ #each items }}
+        {{ >ItemSingle }}
+        {{ /each }}
+    </div>
+</template>
+
+<template name="Home">
+    {{ >Header }}
+    <table class="home">
+        <tr>
+            <td><a href="/bags"> <img src="images/bags.jpg"></a></td>
+            <td><a href="/glasses"> <img src="images/glasses.jpg"></a></td>
+        </tr>
+        <tr>
+            <td><a href="/bags"><h3>Shop Summer Handbags!</h3></a></td>
+            <td><a href="/glasses"><h3>Shop Men's Sun Glasses!</h3></a></td>
+        </tr>
+    </table>
+</template>
+
+<template name="ThankYou">
+    {{ >Header }}
+    <div class="thank">
+        Thank you for participating in our user study. Stay tuned for Igdra's actual launch!
+    </div>
+</template>
+
+<template name="Header">
+    <div id="header">
+        <img src="images/icon.jpeg" height="60px" width="60px" alt="Igdra" />
+        <span class="brand">Igdra</span>
+        <span id="menu">
+            <a href="/"><div class="menu_item"> Home </div></a>
+            <a href="/"><div class="menu_item"> Catalog </div></a>
+            <a href="mailto:igdraseek@gmail.com"><div class="menu_item"> Contact </div></a>
+        </span>
+    </div>
+</template>
+
+<template name="ItemSingle">
+    <div class="content_item">
+        <div class=" label {{ category }}">{{ label }}</div>
+        <img class="item_img" src="{{ imgUrl }}">
+        <div class="desc">{{ desc }}</div>
+        <div class="buy">
+            <div class="price">
+                <span class="price_before">${{ priceBefore }}</span>
+                <span class="price_after">${{ priceAfter }}</span>
+            </div>
+            <button class="cart" data-id="{{ itemId }}">
+                <img src="images/cart.png">
+            </button>
+        </div>
+    </div>
+</template>

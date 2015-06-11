@@ -1,0 +1,187 @@
+/* CSS declarations go here */
+a, a:hover {
+    text-decoration: none;
+}
+
+#header {
+    width: 90%;
+    border-bottom: darkgreen solid 2px;
+    margin: 8px 20px 0 20px;
+    font-family: fantasy;
+    font-weight: bold;
+    float: left;
+}
+
+#header img {
+    float: left;
+    height: 60px;
+    margin: 10px 10px 0 20px;
+}
+
+#header .brand {
+    color: #2E5C00;
+    font-size: 32px;
+    line-height: 76px;
+    font-variant: small-caps;
+}
+
+#menu {
+    width:50%;
+    float:right;
+    padding-top: 45px;
+}
+
+#menu a, #menu a:hover {
+    float: left;
+    color: #2E5C00;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 16px;
+    width: 33%;
+    text-align: center;
+}
+
+#menu a:hover {
+    color: #22c51b;
+}
+
+#menu .menu_item {
+    padding-top:8px;
+    width:100%;
+}
+
+.home img {
+    width: auto;
+    height: auto;
+}
+
+.home {
+    width: 70%;
+    margin-left: 10%;
+    padding-top: 5%;
+}
+
+.home td {
+    text-align:center;
+    vertical-align:middle;
+}
+
+.home a, .home a:visited {
+    color: forestgreen;
+    font-style: italic;
+}
+
+.home a:hover {
+    color: #22c51b;
+}
+
+#body_content {
+    float:left;
+    width:95%;
+    margin-left: 2.5%;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+#body_content .content_item {
+    float: left;
+    margin:8px;
+    padding: 8px;
+    text-align: center;
+    width: 45%;
+    max-width: 45%;
+    border-bottom: 1px solid #bbb;
+}
+
+.item_img {
+    width:auto;
+    margin:15px;
+}
+
+.cart img {
+    background-color: white;
+    width: 96px;
+    height: 30px;
+    float: right;
+}
+
+.buy {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    width: 40%;
+    margin-left:30%;
+    line-height: 30px;
+}
+
+.buy .price {
+    float: left;
+    padding: 0;
+}
+
+.buy .price_before {
+    color: red;
+    text-decoration: line-through;
+}
+
+.buy button {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buy button:focus {
+    outline: none;
+}
+
+.desc {
+    width: 50%;
+    margin-left: 25%;
+    overflow-wrap: break-word;
+}
+
+.label.normal, .label.normal1, .label.local_profile, .label.women_profile {
+    display: none;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius: 20px;
+}
+
+.label.women, .label.women_higher_price {
+    background-color: #FF99CC;
+}
+
+.label.women, .label.women_higher_price {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.label.local, .label.local_higher_price, .label.sustainable, .label.hub {
+    background-color: #82CD82;
+}
+
+.label.local, .label.local_higher_price, .label.sustainable {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.label.hub {
+    width: 76%;
+    margin-left: 12%;
+}
+
+.thank {
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 300;
+    font-size: x-large;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 20%;
+}
