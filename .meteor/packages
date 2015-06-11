@@ -7,3 +7,7 @@
 meteor-platform
 autopublish
 insecure
+reywood:iron-router-ga
+iron:router
+nemo64:bootstrap
+less

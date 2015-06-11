@@ -1,0 +1,259 @@
+/* CSS declarations go here */
+a, a:hover {
+    text-decoration: none;
+}
+
+#header {
+    width: 90%;
+    border-bottom: darkgreen solid 2px;
+    margin: 8px 20px 0 20px;
+    font-family: fantasy;
+    font-weight: bold;
+    float: left;
+}
+
+#header img {
+    float: left;
+    height: 60px;
+    margin: 10px 10px 0 20px;
+}
+
+#header .brand {
+    color: #2E5C00;
+    font-size: 32px;
+    line-height: 60px;
+    font-variant: small-caps;
+}
+
+#menu {
+    float:right;
+    padding-top: 40px;
+}
+
+#menu a, #menu a:hover {
+    float: left;
+    color: #2E5C00;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 16px;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
+}
+#menu a:hover {
+    color: #22c51b;
+}
+
+.home img {
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.home {
+    width: 80%;
+    margin-left: 8%;
+}
+
+.home td {
+    text-align:center;
+    vertical-align:middle;
+}
+
+.home a, .home a:visited {
+    color: forestgreen;
+    font-style: italic;
+}
+
+.home a:hover {
+    color: #22c51b;
+}
+
+#body_content {
+    float:left;
+    width:95%;
+    margin-left: 2.5%;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+#body_content .content_item {
+    border-bottom: 1px solid #cccccc;
+    margin-left: 25px;
+    margin-top: 20px;
+    max-width: 33%;
+}
+
+.item_img {
+    width:auto;
+    position:relative;
+}
+
+.item_img.gla {
+    height: 220px;
+}
+
+.item_img.bag {
+    height: 270px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.item_img img {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.title {
+    overflow-wrap: break-word;
+    height: 17px;
+    padding-bottom: 10px;
+}
+
+.desc {
+    overflow-wrap: break-word;
+    font-size: 13px;
+    height: 100px;
+}
+
+.cart img {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    float: right;
+}
+
+.buy {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 35px;
+    max-height: 40px;
+}
+
+.buy .price {
+    float: left;
+    padding: 0;
+}
+
+.buy .price_before {
+    color: red;
+    text-decoration: line-through;
+}
+
+.buy button {
+    border: none;
+    padding: 0;
+    margin-left: 15px;
+    float: right;
+}
+
+.buy button:focus {
+    outline: none;
+}
+
+.buy .shipping {
+    padding: 0;
+    font-style: italic;
+    font-size:13px;
+}
+
+.label_div {
+    min-height: 55px;
+}
+
+.pre_label {
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    min-height: 32px;
+}
+
+.label_inner {
+    float: left;
+}
+
+.pre_label.women {
+    color: #FF99CC;
+}
+
+.pre_label.sustainable, .pre_label.hub, .pre_label.local {
+    color: #82CD82;
+}
+
+label.normal, .pre_label.normal {
+    display: none;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 8px;
+    border-radius: 20px;
+    text-align: center;
+    min-height: 22px;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.label.women {
+    background-color: #FF99CC;
+}
+
+.label.local, .label.sustainable, .label.hub {
+    background-color: #82CD82;
+}
+
+.label_inner.sustainable_normal {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.label_inner.local_normal, .label_inner.hub_normal {
+    width: 56%;
+    margin-left: 22%;
+}
+
+.label_inner.women_normal {
+    width: 34%;
+    margin-left: 33%;
+}
+
+.label_inner.women_local {
+    width: 98%;
+    margin-left: 1%;
+}
+
+.label_inner.women_sustainable {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.thank {
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 300;
+    font-size: x-large;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 20%;
+}

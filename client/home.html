@@ -1,0 +1,194 @@
+<head>
+    <title>Kate Spade Summer bags & Ray-Ban Sun Glasses</title>
+</head>
+
+<body>
+</body>
+
+<template name="ApplcationLayout">
+    <article>
+        {{> yield}}
+    </article>
+</template>
+
+<template name="BagA">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingleBag }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="BagB">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingleBag }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="BagC">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingleBag }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="GlaA">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingle }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="GlaB">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingle }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="GlaC">
+    {{ >Header }}
+    <div id="body_content">
+        <div class="row">
+            {{ #each items }}
+            <div class="col-md-3 content_item">
+                {{ >ItemSingle }}
+            </div>
+            {{ /each }}
+        </div>
+    </div>
+</template>
+
+<template name="Home">
+    {{ >Header }}
+    <table class="home">
+        <tr>
+            <td><a href="/bags"> <img src="images/bags.jpg"></a></td>
+            <td><a href="/glasses"> <img src="images/glasses.jpg"></a></td>
+        </tr>
+        <tr>
+            <td><a href="/bags"><h2>Shop Summer Handbags!</h2></a></td>
+            <td><a href="/glasses"><h2>Shop Men's Sun Glasses!</h2></a></td>
+        </tr>
+    </table>
+</template>
+
+<template name="ThankYou">
+    {{ >Header }}
+    <div class="thank">
+        Thank you for participating in our user study. Stay tuned for Igdra's actual launch!
+    </div>
+</template>
+
+<template name="Header">
+    <nav id="header" class="navbar">
+        <div class="container-fluid">
+           <div class="navbar-header">
+                <img src="images/icon.jpg" alt="Igdra" />
+                <a class="navbar-brand brand" href="/">Igdra</a>
+            </div>
+
+            <div id="menu">
+                <ul class="nav navbar-nav">
+                    <li class="menu_item"><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Catalog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/bags">Women</a></li>
+                            <li><a href="/glasses">men</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_item"><a href="mailto:igdraseek@gmail.com"> Contact </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</template>
+
+<template name="ItemSingle">
+    <div class="label_div">
+        <div class="pre_label {{ category.[0] }}">This Business is:</div>
+        <div class="label_inner {{category.[0]}}_{{category.[1]}}">
+            <span class="label ellipsis {{ category.[0] }}">{{ getLabel category.[0] }}</span>
+            <span class="label ellipsis {{ category.[1] }}">{{ getLabel category.[1] }}</span>
+        </div>
+    </div>
+    <div class="item_img gla"> <img src="{{ imgUrl }}"></div>
+    <div class="title">{{ title }}</div>
+    <div class="desc">
+        <ul>
+            {{ #each desc }}
+                <li>{{ this }}</li>
+            {{ /each }}
+        </ul>
+    </div>
+    <div class="buy ellipsis">
+        <div class="price">
+            <span class="price_before">${{ priceBefore }}</span>
+            <span class="price_after">${{ priceAfter }}</span>
+            <span class="shipping"> | Free Shipping</span>
+        </div>
+        <button class="cart" data-id="{{ itemId }}" data-category="{{category.[0]}}_{{category.[1]}}">
+            <img src="images/cart.jpg">
+        </button>
+    </div>
+</template>
+
+<template name="ItemSingleBag">
+    <div class="label_div">
+        <div class="pre_label {{ category.[0] }}">This Business is:</div>
+        <div class="label_inner {{category.[0]}}_{{category.[1]}}">
+            <span class="label ellipsis {{ category.[0] }}">{{ getLabel category.[0] }}</span>
+            <span class="label ellipsis {{ category.[1] }}">{{ getLabel category.[1] }}</span>
+        </div>
+    </div>
+    <div class="item_img bag"> <img src="{{ imgUrl }}"></div>
+    <div class="title">{{ title }}</div>
+    <div class="desc">
+        <ul>
+            {{ #each desc }}
+            <li>{{ this }}</li>
+            {{ /each }}
+        </ul>
+    </div>
+    <div class="buy ellipsis">
+        <div class="price">
+            <span class="price_before">${{ priceBefore }}</span>
+            <span class="price_after">${{ priceAfter }}</span>
+            <span class="shipping"> | Free Shipping</span>
+        </div>
+        <button class="cart" data-id="{{ itemId }}" data-category="{{category.[0]}}_{{category.[1]}}">
+            <img src="images/cart.jpg">
+        </button>
+    </div>
+</template>
