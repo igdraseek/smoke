@@ -10,15 +10,15 @@ Router.route('/', function () {
 
 Router.route('/bags', {
   contentExperiment: {
-    id: "6wJpJ2UBSj2-L3YDJh1-CQ",
-    variationTemplates: ["BagA", "BagB1", "BagB2", "BagB3"]
+    id: "ID:qcz0wO1NREWhR35otaangw",
+    variationTemplates: ["BagA", "BagB", "BagC"]
   }
 });
 
 Router.route('/glasses', {
   contentExperiment: {
-    id: "XlCvS7p3SuiAPC1xHFTc1g",
-    variationTemplates: ["GlaA", "GlaB1", "GlaB2", "GlaB3"]
+    id: "_S-BrMpVQCuykoAI__-IyA",
+    variationTemplates: ["GlaA", "GlaB", "GlaC"]
   }
 });
 
@@ -30,81 +30,91 @@ Router.route('/thank', function () {
 Router.route('/TestBagA', function () {
   this.render('BagA');
 });
-Router.route('/TestBagB1', function () {
-  this.render('BagB1');
+Router.route('/TestBagB', function () {
+  this.render('BagB');
 });
-Router.route('/TestBagB2', function () {
-  this.render('BagB2');
-});
-Router.route('/TestBagB3', function () {
-  this.render('BagB3');
+Router.route('/TestBagC', function () {
+  this.render('BagC');
 });
 Router.route('/TestGlaA', function () {
   this.render('GlaA');
 });
-Router.route('/TestGlaB1', function () {
-  this.render('GlaB1');
+Router.route('/TestGlaB', function () {
+  this.render('GlaB');
 });
-Router.route('/TestGlaB2', function () {
-  this.render('GlaB2');
-});
-Router.route('/TestGlaB3', function () {
-  this.render('GlaB3');
+Router.route('/TestGlaC', function () {
+  this.render('GlaC');
 });
 
 Template.BagA.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Bags.find({category : {$in : ['normal', 'normal1']}});
+    return BagsA.find();
   }
 });
 
-Template.BagB1.helpers({
+Template.BagB.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Bags.find({category : {$in : ['normal', 'local', 'women']}});
+    return BagsB.find();
   }
 });
 
-Template.BagB2.helpers({
+Template.BagC.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Bags.find({category : {$in : ['normal', 'sustainable', 'hub']}});
-  }
-});
-
-Template.BagB3.helpers({
-  items: function () {
-    // get all the items from the db and populate our UI
-    return Bags.find({category : {$in : ['normal', 'local_higher_price', 'women_higher_price']}});
+    return BagsC.find();
   }
 });
 
 Template.GlaA.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Glasses.find({category : {$in : ['normal', 'normal1']}});
+    return GlassesA.find();
   }
 });
 
-Template.GlaB1.helpers({
+Template.GlaB.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Glasses.find({category : {$in : ['normal', 'local', 'women']}});
+    return GlassesB.find();
   }
 });
 
-Template.GlaB2.helpers({
+Template.GlaC.helpers({
   items: function () {
-    // get all the items from the db and populate our UI
-    return Glasses.find({category : {$in : ['normal', 'sustainable', 'hub']}});
+    return GlassesC.find();
   }
 });
 
-Template.GlaB3.helpers({
-  items: function () {
-    // get all the items from the db and populate our UI
-    return Glasses.find({category : {$in : ['normal', 'local_higher_price', 'women_higher_price']}});
+Template.ItemSingle.helpers({
+  getLabel: function(className) {
+    if (className == "women") {
+      return "Owned by Women";
+    }
+    if (className == "local") {
+      return "Local Based on Your Location"
+    }
+    if (className == "sustainable") {
+      return "Certified Sustainable";
+    }
+    if (className == "hub") {
+      return "In Low Income Neighborhood";
+    }
+    return "";
+  }
+});
+
+Template.ItemSingleBag.helpers({
+  getLabel: function(className) {
+    if (className == "women") {
+      return "Owned by Women";
+    }
+    if (className == "local") {
+      return "Local Based on Your Location"
+    }
+    if (className == "sustainable") {
+      return "Certified Sustainable";
+    }
+    if (className == "hub") {
+      return "In Low Income Neighborhood";
+    }
+    return "";
   }
 });
 
@@ -116,9 +126,27 @@ Template.ItemSingle.events({
 
     // record the click.
     var dataId = $(event.currentTarget).data('id');
-    console.log('click on buy button: ' + dataId);
+    var category=$(event.currentTarget).data('category');
+    console.log('click on buy button: ' + dataId + ' cat: ' + category);
 
-    ga('send', 'event', dataId, 'click', 'buy button', 1);
+    ga('send', 'event', dataId, 'click', category, 1);
+
+    Router.go('/thank');
+  }
+});
+
+Template.ItemSingleBag.events({
+  'click .cart': function (event) {
+
+    // prevent the default behavior
+    event.preventDefault();
+
+    // record the click.
+    var dataId = $(event.currentTarget).data('id');
+    var category=$(event.currentTarget).data('category');
+    console.log('click on buy button: ' + dataId + ' cat: ' + category);
+
+    ga('send', 'event', dataId, 'click', 'buy ' + category, 1);
 
     Router.go('/thank');
   }

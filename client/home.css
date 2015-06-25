@@ -21,14 +21,13 @@ a, a:hover {
 #header .brand {
     color: #2E5C00;
     font-size: 32px;
-    line-height: 76px;
+    line-height: 60px;
     font-variant: small-caps;
 }
 
 #menu {
-    width:50%;
     float:right;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 #menu a, #menu a:hover {
@@ -38,28 +37,33 @@ a, a:hover {
     font-weight: bold;
     font-family: fantasy;
     font-size: 16px;
-    width: 33%;
+    width: 150px;
     text-align: center;
+    padding-bottom: 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: transparent;
 }
 
 #menu a:hover {
     color: #22c51b;
 }
 
-#menu .menu_item {
-    padding-top:8px;
-    width:100%;
-}
-
 .home img {
     width: auto;
     height: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 .home {
-    width: 70%;
-    margin-left: 10%;
-    padding-top: 5%;
+    width: 80%;
+    margin-left: 8%;
 }
 
 .home td {
@@ -85,33 +89,61 @@ a, a:hover {
 }
 
 #body_content .content_item {
-    float: left;
-    margin:8px;
-    padding: 8px;
-    text-align: center;
-    width: 45%;
-    max-width: 45%;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #cccccc;
+    margin-left: 25px;
+    margin-top: 20px;
+    max-width: 33%;
 }
 
 .item_img {
     width:auto;
-    margin:15px;
+    position:relative;
+}
+
+.item_img.gla {
+    height: 220px;
+}
+
+.item_img.bag {
+    height: 270px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.item_img img {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.title {
+    overflow-wrap: break-word;
+    height: 17px;
+    padding-bottom: 10px;
+}
+
+.desc {
+    overflow-wrap: break-word;
+    font-size: 13px;
+    height: 100px;
 }
 
 .cart img {
     background-color: white;
-    width: 96px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     float: right;
 }
 
 .buy {
-    margin-top: 8px;
-    margin-bottom: 5px;
-    width: 40%;
-    margin-left:30%;
-    line-height: 30px;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 35px;
+    max-height: 40px;
 }
 
 .buy .price {
@@ -126,21 +158,45 @@ a, a:hover {
 
 .buy button {
     border: none;
-    margin: 0;
     padding: 0;
+    margin-left: 15px;
+    float: right;
 }
 
 .buy button:focus {
     outline: none;
 }
 
-.desc {
-    width: 50%;
-    margin-left: 25%;
-    overflow-wrap: break-word;
+.buy .shipping {
+    padding: 0;
+    font-style: italic;
+    font-size:13px;
 }
 
-.label.normal, .label.normal1, .label.local_profile, .label.women_profile {
+.label_div {
+    min-height: 55px;
+}
+
+.pre_label {
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    min-height: 32px;
+}
+
+.label_inner {
+    float: left;
+}
+
+.pre_label.women {
+    color: #FF99CC;
+}
+
+.pre_label.sustainable, .pre_label.hub, .pre_label.local {
+    color: #82CD82;
+}
+
+label.normal, .pre_label.normal {
     display: none;
 }
 
@@ -148,32 +204,49 @@ a, a:hover {
     color: white;
     font-weight: bold;
     font-family: cursive;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding: 8px;
     border-radius: 20px;
+    text-align: center;
+    min-height: 22px;
 }
 
-.label.women, .label.women_higher_price {
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.label.women {
     background-color: #FF99CC;
 }
 
-.label.women, .label.women_higher_price {
-    width: 50%;
-    margin-left: 25%;
-}
-
-.label.local, .label.local_higher_price, .label.sustainable, .label.hub {
+.label.local, .label.sustainable, .label.hub {
     background-color: #82CD82;
 }
 
-.label.local, .label.local_higher_price, .label.sustainable {
-    width: 60%;
-    margin-left: 20%;
+.label_inner.sustainable_normal {
+    width: 40%;
+    margin-left: 30%;
 }
 
-.label.hub {
-    width: 76%;
-    margin-left: 12%;
+.label_inner.local_normal, .label_inner.hub_normal {
+    width: 56%;
+    margin-left: 22%;
+}
+
+.label_inner.women_normal {
+    width: 34%;
+    margin-left: 33%;
+}
+
+.label_inner.women_local {
+    width: 98%;
+    margin-left: 1%;
+}
+
+.label_inner.women_sustainable {
+    width: 90%;
+    margin-left: 5%;
 }
 
 .thank {

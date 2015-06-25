@@ -13,11 +13,19 @@
     "buttons"              : false,
 
     "component-animations" : false,
+<<<<<<< HEAD
     "dropdowns"            : false,
     "button-groups"        : false,
     "input-groups"         : false,
     "navs"                 : false,
     "navbar"               : false,
+=======
+    "dropdowns"            : true,
+    "button-groups"        : false,
+    "input-groups"         : false,
+    "navs"                 : true,
+    "navbar"               : true,
+>>>>>>> grid
     "breadcrumbs"          : false,
     "pagination"           : false,
     "pager"                : false,
