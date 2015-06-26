@@ -5,8 +5,8 @@ a, a:hover {
 
 #header {
     width: 90%;
+    margin-left: 5%;
     border-bottom: darkgreen solid 2px;
-    margin: 8px 20px 0 20px;
     font-family: fantasy;
     font-weight: bold;
     float: left;
@@ -20,7 +20,7 @@ a, a:hover {
 
 #header .brand {
     color: #2E5C00;
-    font-size: 32px;
+    font-size: xx-large;
     line-height: 60px;
     font-variant: small-caps;
 }
@@ -36,8 +36,8 @@ a, a:hover {
     font-variant: small-caps;
     font-weight: bold;
     font-family: fantasy;
-    font-size: 16px;
-    width: 150px;
+    font-size: large;
+    width: 100px;
     text-align: center;
     padding-bottom: 0;
 }
@@ -82,17 +82,16 @@ a, a:hover {
 
 #body_content {
     float:left;
-    width:95%;
+    width: 95%;
     margin-left: 2.5%;
     font-family: Verdana;
-    font-size: 14px;
+    font-size: medium;
 }
 
 #body_content .content_item {
     border-bottom: 1px solid #cccccc;
-    margin-left: 25px;
-    margin-top: 20px;
-    max-width: 33%;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .item_img {
@@ -101,12 +100,12 @@ a, a:hover {
 }
 
 .item_img.gla {
-    height: 220px;
+    height: 200px;
 }
 
 .item_img.bag {
     height: 270px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 
@@ -127,7 +126,6 @@ a, a:hover {
 
 .desc {
     overflow-wrap: break-word;
-    font-size: 13px;
     height: 100px;
 }
 
@@ -140,10 +138,9 @@ a, a:hover {
 
 .buy {
     float: left;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     line-height: 35px;
-    max-height: 40px;
 }
 
 .buy .price {
@@ -170,22 +167,16 @@ a, a:hover {
 .buy .shipping {
     padding: 0;
     font-style: italic;
-    font-size:13px;
 }
 
 .label_div {
-    min-height: 55px;
+    min-height: 75px;
 }
 
 .pre_label {
-    font-weight: bold;
+    font-weight: bolder;
     font-family: cursive;
-    text-align: center;
     min-height: 32px;
-}
-
-.label_inner {
-    float: left;
 }
 
 .pre_label.women {
@@ -204,10 +195,10 @@ label.normal, .pre_label.normal {
     color: white;
     font-weight: bold;
     font-family: cursive;
-    padding: 8px;
+    padding: 6px 8px 6px 8px;
     border-radius: 20px;
     text-align: center;
-    min-height: 22px;
+    min-height: 18px;
 }
 
 .ellipsis {
@@ -222,31 +213,6 @@ label.normal, .pre_label.normal {
 
 .label.local, .label.sustainable, .label.hub {
     background-color: #82CD82;
-}
-
-.label_inner.sustainable_normal {
-    width: 40%;
-    margin-left: 30%;
-}
-
-.label_inner.local_normal, .label_inner.hub_normal {
-    width: 56%;
-    margin-left: 22%;
-}
-
-.label_inner.women_normal {
-    width: 34%;
-    margin-left: 33%;
-}
-
-.label_inner.women_local {
-    width: 98%;
-    margin-left: 1%;
-}
-
-.label_inner.women_sustainable {
-    width: 90%;
-    margin-left: 5%;
 }
 
 .thank {

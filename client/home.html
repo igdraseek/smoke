@@ -1,5 +1,7 @@
 <head>
-    <title>Kate Spade Summer bags & Ray-Ban Sun Glasses</title>
+    <title>Ray-Ban Sun Glasses</title>
+    <meta property="og:image" content="http://igdra.meteor.com/images/gla4.jpg">
+    <meta property="og:description" content="Free shipping and return!">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingleBag }}
             </div>
             {{ /each }}
@@ -29,7 +31,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingleBag }}
             </div>
             {{ /each }}
@@ -42,7 +44,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingleBag }}
             </div>
             {{ /each }}
@@ -55,7 +57,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingle }}
             </div>
             {{ /each }}
@@ -68,7 +70,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingle }}
             </div>
             {{ /each }}
@@ -81,7 +83,7 @@
     <div id="body_content">
         <div class="row">
             {{ #each items }}
-            <div class="col-md-3 content_item">
+            <div class="content_item col-xs-12 col-sm-6 col-md-4 col-lg-3">
                 {{ >ItemSingle }}
             </div>
             {{ /each }}
@@ -181,11 +183,11 @@
             {{ /each }}
         </ul>
     </div>
-    <div class="buy ellipsis">
+    <div class="buy">
         <div class="price">
             <span class="price_before">${{ priceBefore }}</span>
             <span class="price_after">${{ priceAfter }}</span>
-            <span class="shipping"> | Free Shipping</span>
+            <span class="shipping ellipsis"> | Free Shipping</span>
         </div>
         <button class="cart" data-id="{{ itemId }}" data-category="{{category.[0]}}_{{category.[1]}}">
             <img src="images/cart.jpg">
