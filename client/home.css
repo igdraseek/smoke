@@ -100,7 +100,7 @@ a, a:hover {
 }
 
 .item_img.gla {
-    height: 200px;
+    height: 230px;
 }
 
 .item_img.bag {
@@ -170,7 +170,7 @@ a, a:hover {
 }
 
 .label_div {
-    min-height: 75px;
+    min-height: 82px;
 }
 
 .pre_label {
@@ -195,10 +195,10 @@ label.normal, .pre_label.normal {
     color: white;
     font-weight: bold;
     font-family: cursive;
-    padding: 6px 8px 6px 8px;
+    padding: 6px 6px 6px 6px;
     border-radius: 20px;
     text-align: center;
-    min-height: 18px;
+    min-height: 20px;
 }
 
 .ellipsis {

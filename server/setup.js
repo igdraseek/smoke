@@ -102,18 +102,18 @@ Meteor.startup(function() {
             },
             {
                 itemId: 'gla_a7',
-                title: 'Ray-Ban RB 3386 Aviator Sunglasses',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
                 category: ['normal', 'normal'],
                 imgUrl: 'images/gla7.jpg',
                 desc: [
-                    "Gold metal frame",
                     "Imported",
-                    "Non-polarized lens",
-                    "Lens: Polycarbonate",
-                    "Lens: 63mm / Bridge: 13mm / Arm: 130",
+                    "Metal Gold Frame",
+                    "Crystal Blue Mirror lens",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
                 ],
-                priceBefore: 195,
-                priceAfter: 103
+                priceBefore: 170,
+                priceAfter: 111
             },
             {
                 itemId: 'gla_a8',
@@ -122,8 +122,8 @@ Meteor.startup(function() {
                 imgUrl: 'images/gla8.jpg',
                 desc: [
                     "Imported",
-                    "Plastic frame",
-                    "Plastic lens, non-polarized",
+                    "Matte Blue Plastic frame",
+                    "Grey lens, non-polarized",
                     "100% UV protection coating",
                     "Lens width: 55.4 mm",
                     "Lens height: 41.2 mm"
@@ -146,6 +146,54 @@ Meteor.startup(function() {
                 ],
                 priceBefore: 150,
                 priceAfter: 106
+            },
+            {
+                itemId: 'gla_a10',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['normal', 'normal'],
+                imgUrl: 'images/gla10.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal Green Mirror lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 57.5 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 103
+            },
+            {
+                itemId: 'gla_a11',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['normal', 'normal'],
+                imgUrl: 'images/gla11.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal gradient light blue lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 160,
+                priceAfter: 89
+            },
+            {
+                itemId: 'gla_a12',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['normal', 'normal'],
+                imgUrl: 'images/gla12.jpg',
+                desc: [
+                    "Imported",
+                    "Metal Silver Frame",
+                    "Crystal Grey Mirror lens",
+                    "100% UV protection coating",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 98
             }
         ];
 
@@ -206,7 +254,7 @@ Meteor.startup(function() {
             {
                 itemId: 'gla_b4',
                 title: 'Ray-Ban RB 3025 Arista',
-                category: ['sustainable', "normal"],
+                category: ['sustainable', 'normal'],
                 imgUrl: 'images/gla4.jpg',
                 desc: [
                     "Arista Gold Metal Frame",
@@ -244,27 +292,27 @@ Meteor.startup(function() {
                     "Gun Metal Frame",
                     "Green solid lens",
                     "Imported",
-                    "Non-polarized Lens",
+                    "Non-polarized lens",
                     "100% UV protection coating",
-                    "Lens Width 63mm"
+                    "Lens width 63mm"
                 ],
                 priceBefore: 130,
                 priceAfter: 84
             },
             {
                 itemId: 'gla_b7',
-                title: 'Ray-Ban RB 3386 Aviator Sunglasses',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
                 category: ['normal', 'normal'],
                 imgUrl: 'images/gla7.jpg',
                 desc: [
-                    "Gold Metal Frame",
                     "Imported",
-                    "Non polarized Lens",
-                    "Lens: Polycarbonate",
-                    "Lens: 63mm / Bridge: 13mm / Arm: 130",
+                    "Metal Gold Frame",
+                    "Crystal Blue Mirror lens",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
                 ],
-                priceBefore: 195,
-                priceAfter: 103
+                priceBefore: 170,
+                priceAfter: 111
             },
             {
                 itemId: 'gla_b8',
@@ -273,8 +321,8 @@ Meteor.startup(function() {
                 imgUrl: 'images/gla8.jpg',
                 desc: [
                     "Imported",
-                    "Plastic frame",
-                    "Plastic lens, Non-Polarized",
+                    "Matte Blue Plastic frame",
+                    "Grey lens, non-polarized",
                     "100% UV protection coating",
                     "Lens width: 55.4 mm",
                     "Lens height: 41.2 mm"
@@ -289,14 +337,62 @@ Meteor.startup(function() {
                 imgUrl: 'images/gla9.jpg',
                 desc: [
                     "Made in US",
-                    "Plastic frame",
-                    "Glasses lens, Non-Polarized",
+                    "Plastic frame, Non-polarized",
+                    "Glasses lens",
                     "100% UV protection coating",
                     "Lens width: 50 mm",
                     "Lens height: 45 mm"
                 ],
                 priceBefore: 150,
                 priceAfter: 106
+            },
+            {
+                itemId: 'gla_b10',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['sustainable', 'hub'],
+                imgUrl: 'images/gla10.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal Green Mirror lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 57.5 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 103
+            },
+            {
+                itemId: 'gla_b11',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['women', 'hub'],
+                imgUrl: 'images/gla11.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal gradient light blue lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 160,
+                priceAfter: 89
+            },
+            {
+                itemId: 'gla_b12',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['normal', 'normal'],
+                imgUrl: 'images/gla12.jpg',
+                desc: [
+                    "Imported",
+                    "Metal Silver Frame",
+                    "Crystal Grey Mirror lens",
+                    "100% UV protection coating",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 98
             }
         ];
 
@@ -336,7 +432,7 @@ Meteor.startup(function() {
                     "Lens Width 50mm"
                 ],
                 priceBefore: 150,
-                priceAfter: 100
+                priceAfter: 99
             },
             {
                 itemId: 'gla_c3',
@@ -357,7 +453,7 @@ Meteor.startup(function() {
             {
                 itemId: 'gla_c4',
                 title: 'Ray-Ban RB 3025 Arista',
-                category: ['sustainable', "normal"],
+                category: ['sustainable', 'normal'],
                 imgUrl: 'images/gla4.jpg',
                 desc: [
                     "Arista Gold Metal Frame",
@@ -395,27 +491,27 @@ Meteor.startup(function() {
                     "Gun Metal Frame",
                     "Green solid lens",
                     "Imported",
-                    "Non-polarized Lens",
+                    "Non-polarized lens",
                     "100% UV protection coating",
-                    "Lens Width 63mm"
+                    "Lens width 63mm"
                 ],
                 priceBefore: 130,
                 priceAfter: 84
             },
             {
                 itemId: 'gla_c7',
-                title: 'Ray-Ban RB 3386 Aviator Sunglasses',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
                 category: ['normal', 'normal'],
                 imgUrl: 'images/gla7.jpg',
                 desc: [
-                    "Gold Metal Frame",
                     "Imported",
-                    "Non polarized Lens",
-                    "Lens: Polycarbonate",
-                    "Lens: 63mm / Bridge: 13mm / Arm: 130",
+                    "Metal Gold Frame",
+                    "Crystal Blue Mirror lens",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
                 ],
-                priceBefore: 195,
-                priceAfter: 103
+                priceBefore: 170,
+                priceAfter: 111
             },
             {
                 itemId: 'gla_c8',
@@ -424,8 +520,8 @@ Meteor.startup(function() {
                 imgUrl: 'images/gla8.jpg',
                 desc: [
                     "Imported",
-                    "Plastic frame",
-                    "Plastic lens, Non-Polarized",
+                    "Matte Blue Plastic frame",
+                    "Grey lens, non-polarized",
                     "100% UV protection coating",
                     "Lens width: 55.4 mm",
                     "Lens height: 41.2 mm"
@@ -434,20 +530,68 @@ Meteor.startup(function() {
                 priceAfter: 139
             },
             {
-                itemId: 'gla_c9',
+                itemId: 'gla_b9',
                 title: 'Ray-Ban RB 2180 Sunglasses',
                 category: ['women', 'sustainable'],
                 imgUrl: 'images/gla9.jpg',
                 desc: [
                     "Made in US",
-                    "Plastic frame",
-                    "Glasses lens, Non-Polarized",
+                    "Plastic frame, Non-polarized",
+                    "Glasses lens",
                     "100% UV protection coating",
                     "Lens width: 50 mm",
                     "Lens height: 45 mm"
                 ],
                 priceBefore: 150,
                 priceAfter: 127
+            },
+            {
+                itemId: 'gla_c10',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['sustainable', 'hub'],
+                imgUrl: 'images/gla10.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal Green Mirror lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 57.5 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 103
+            },
+            {
+                itemId: 'gla_c11',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['women', 'hub'],
+                imgUrl: 'images/gla11.jpg',
+                desc: [
+                    "Made in US",
+                    "Metal Gold Frame",
+                    "Crystal gradient light blue lens",
+                    "Non-polarized",
+                    "100% UV protection coating",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 160,
+                priceAfter: 106
+            },
+            {
+                itemId: 'gla_b12',
+                title: 'Ray-Ban RB 3025 Aviator Sunglasses',
+                category: ['normal', 'normal'],
+                imgUrl: 'images/gla12.jpg',
+                desc: [
+                    "Imported",
+                    "Metal Silver Frame",
+                    "Crystal Grey Mirror lens",
+                    "100% UV protection coating",
+                    "Non-polarized",
+                    "Lens width: 58 mm"
+                ],
+                priceBefore: 170,
+                priceAfter: 117
             }
         ];
 
